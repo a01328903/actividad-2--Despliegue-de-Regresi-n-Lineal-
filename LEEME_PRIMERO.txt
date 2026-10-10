@@ -1,0 +1,34 @@
+DASHBOARD GAC — PAQUETE COMPLETO
+
+Incluye las etapas I y II, las bases originales, los datos agregados,
+el logo, el tema, los notebooks y el código actualizado.
+Los controles de las regresiones están debajo de los resultados.
+
+REQUISITOS
+Python 3.12 y conexión a Internet para instalar las dependencias.
+El ZIP incluye requirements.txt; no incluye Python ni un entorno virtual.
+
+INICIO EN macOS / LINUX
+1. Descomprime el ZIP y abre la carpeta Dashboard_GAC en Visual Studio Code.
+2. En una terminal ubicada en esa carpeta, ejecuta:
+
+   python3.12 -m venv .venv
+   source .venv/bin/activate
+   python -m pip install -r requirements.txt
+   python -m streamlit run app_univariado.py --server.port 8502
+
+3. Abre http://localhost:8502
+4. Para detener el servidor, pulsa Ctrl+C en la terminal.
+
+INICIO EN WINDOWS (PowerShell)
+   py -3.12 -m venv .venv
+   .venv\Scripts\python.exe -m pip install -r requirements.txt
+   .venv\Scripts\python.exe -m streamlit run app_univariado.py --server.port 8502
+
+Debes ejecutar los comandos desde Dashboard_GAC para cargar el tema.
+El README contiene la metodología y los detalles de cada archivo.
+Para los notebooks, selecciona el intérprete de .venv en VS Code.
+
+DATOS
+Este paquete contiene las bases originales con información de clientes.
+.gitignore las excluye del respaldo en Git. Evita publicar el ZIP completo.
